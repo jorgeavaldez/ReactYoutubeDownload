@@ -5,6 +5,7 @@
 var React = require('react');
 var debug = require('debug');
 var debugClient = debug('reactyoutubedownload');
+var injectTapEventPlugin = require('react-tap-event-plugin');
 var app = require('./app');
 var dehydratedState = window.App; // Sent from the server
 
@@ -13,6 +14,8 @@ window.React = React; // For chrome dev tool support
 // expose debug object to browser, so that it can be enabled/disabled from browser:
 // https://github.com/visionmedia/debug#browser-support
 window.fluxibleDebug = debug;
+
+injectTapEventPlugin();
 
 debugClient('rehydrating app');
 

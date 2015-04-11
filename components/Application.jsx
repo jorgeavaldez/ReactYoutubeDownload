@@ -1,8 +1,12 @@
 'use strict';
 var React = require('react');
-var Nav = require('./Nav.jsx');
-var Home = require('./Home.jsx');
-var About = require('./About.jsx');
+var injectTapEventPlugin = require('react-tap-event-plugin');
+var materialUI = require('material-ui');
+var Paper = materialUI.Paper;
+//var Nav = require('./Nav.jsx');
+//var Home = require('./Home.jsx');
+//var About = require('./About.jsx');
+var DownloadRow = require('./DownloadRow.jsx');
 var ApplicationStore = require('../stores/ApplicationStore');
 var RouterMixin = require('flux-router-component').RouterMixin;
 var FluxibleMixin = require('fluxible').FluxibleMixin;
@@ -39,8 +43,11 @@ var Application = React.createClass({
         }
         return (
             <div>
-                <Nav selected={this.state.currentPageName} links={this.state.pages} />
-                {output}
+                <Paper>
+                    <h1>Youtube Downloader</h1>
+                    <br>
+
+                </Paper>
             </div>
         );
     },

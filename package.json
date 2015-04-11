@@ -18,7 +18,9 @@
     "fluxible": "^0.3.0",
     "fluxible-plugin-fetchr": "^0.2.1",
     "fluxible-plugin-routr": "^0.3.0",
+    "material-ui": "^0.7.3",
     "react": "^0.13.0",
+    "react-tap-event-plugin": "^0.1.6",
     "serialize-javascript": "^1.0.0",
     "serve-favicon": "^2.1.6",
     "ytdl-core": "^0.5.1"
